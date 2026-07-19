@@ -1,0 +1,3 @@
+# build.sh and test.sh configure and build in mayhem/build. SPEC §6.2 item 16:
+# build directories MUST be gitignored so `git clean -ffdX` removes configure state.
+/build/
