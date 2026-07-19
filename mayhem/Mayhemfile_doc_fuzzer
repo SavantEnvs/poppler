@@ -1,0 +1,9 @@
+project: savantenvs/poppler
+target: doc_fuzzer
+cmds:
+  - cmd: /mayhem/doc_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/poppler.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/doc_fuzzer/testsuite
