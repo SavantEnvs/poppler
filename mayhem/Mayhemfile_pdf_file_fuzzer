@@ -1,0 +1,10 @@
+project: savantenvs/poppler
+# seed-from: https://app.mayhem.security/savantenvs/poppler/pdf-file-fuzzer
+target: pdf_file_fuzzer-mined-a89c3c2
+cmds:
+  - cmd: /mayhem/pdf_file_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/poppler.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pdf_file_fuzzer-mined-a89c3c2/testsuite
